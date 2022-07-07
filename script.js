@@ -7,10 +7,10 @@ class combo {
     }
 }
 
-// Generamos nuestros productos
-const combo1 = new combo('hamburguesa', '/img/hamburguesa.jpg', 800)
-const combo2 = new combo('pizza', '/img/pizza.jpg' , 750)
-const combo3 = new combo('papas fritas', '/img/papas-fritas.jpg', 500)
+// Generamos nuestros productos-
+const combo1 = new combo('hamburguesa','img/hamburguesa.jpg' , 800)
+const combo2 = new combo('pizza', 'img/pizza.jpg' , 750)
+const combo3 = new combo('papas fritas', 'img/papas-fritas.jpg', 500)
 
 // Creamos un array con todos nuestros productos dentro
 const productos = [combo1, combo2, combo3]
