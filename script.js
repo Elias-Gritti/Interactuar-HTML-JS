@@ -8,9 +8,9 @@ class combo {
 }
 
 // Generamos nuestros productos-
-const combo1 = new combo('hamburguesa','../img/hamburguesa.jpg' , 800)
-const combo2 = new combo('pizza', '../img/pizza.jpg' , 750)
-const combo3 = new combo('papas fritas', '../img/papas-fritas.jpg', 500)
+const combo1 = new combo('hamburguesa', './img/hamburguesa.jpg' , 800)
+const combo2 = new combo('pizza', './img/pizza.jpg' , 750)
+const combo3 = new combo('papas fritas', './img/papas-fritas.jpg', 500)
 
 // Creamos un array con todos nuestros productos dentro
 const productos = [combo1, combo2, combo3]
@@ -37,7 +37,7 @@ productos.forEach((producto) => {
 // Una vez que nuestras cards se renderizaron, accedemos a todos nuestros botones a traves de la clase en comun y le agregamos la escucha del evento click
 const botonesCompra = document.querySelectorAll('.buttonCTA')
 botonesCompra.forEach((botonCompra) => {
-    botonCompra.addEventListener('click', agregarProducto)
+    botonCompra.addEventListener('click', botonesCompra)
 })
 
 // Cuando el usuario haga click en un boton, a traves del parametro e nos va a llegar cual es el boton en cuestion. 
